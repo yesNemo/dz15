@@ -1,0 +1,135 @@
+.grid__item:nth-child(2), .grid__item {
+  border: 1px solid #888;
+  border-radius: 5px;
+}
+
+.absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font: 400 16px/1.2 "Arial", sans-serif;
+  background: #222;
+  color: #f1efef;
+  padding: 100px 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 100px;
+  grid-gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto 50px;
+}
+.grid__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: tranparent;
+}
+.grid__item:first-child {
+  background: indigo;
+}
+.grid__item:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: yellow;
+}
+.grid__item:last-child {
+  background: tomato;
+}
+.grid-inner__item {
+  /*&:nth-child(1) {
+    background-color: darken(variables.$bgSky, 10%);
+  }
+  &:nth-child(2) {
+    background-color: darken(variables.$bgSky, 20%);
+  }
+  &:nth-child(3) {
+    background-color: darken(variables.$bgSky, 30%);
+  }
+  &:nth-child(4) {
+    background-color: darken(variables.$bgSky, 40%);
+  }*/
+}
+.grid-inner__item:nth-child(1) {
+  background-color: deepskyblue;
+}
+.grid-inner__item:nth-child(2) {
+  background-color: #0099cc;
+}
+.grid-inner__item:nth-child(3) {
+  background-color: #007399;
+}
+.grid-inner__item:nth-child(4) {
+  background-color: #004c66;
+}
+
+.absolute {
+  background: tomato;
+  width: 100px;
+  height: 100px;
+}
+
+.circle-list {
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  grid-auto-rows: 150px;
+  grid-gap: 30px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.circle-list__item > svg {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  transform: rotate(-90deg);
+}
+.circle-list__item > svg circle {
+  fill: #333;
+  stroke: red;
+  stroke-width: 32;
+}
+
+.gradient {
+  width: 500px;
+  height: 200px;
+  margin: 0 auto 50px;
+}
+.gradient > svg {
+  width: inherit;
+  height: inherit;
+  color: #00ffd0;
+}
+.gradient > svg linearGradient {
+  transform: rotate(45deg);
+}
+
+.gradient-box {
+  width: 500px;
+  height: 200px;
+  padding: calc(10px + 1em);
+  margin: 0 auto;
+  background: url('data:image/svg+xml,  <svg xmlns="http://www.w3.org/2000/svg">  <linearGradient id="g" gradientTransform="rotate(45)">  <stop stop-color="red"></stop>  <stop stop-color="indigo" offset=".5"></stop>  <stop stop-color="indigo" offset=".8"></stop>  <stop stop-color="%230bf" offset="1"></stop>  </linearGradient>  <rect width="100%" height="100%" style="stroke: url(%23g); stroke-width: 20px; fill: none; " />  </svg>');
+}
+
+/*# sourceMappingURL=main.css.map */

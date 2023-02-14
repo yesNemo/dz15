@@ -1,0 +1,10 @@
+@use "variables";
+//готові вставні кусочки коду починається з проценту
+
+%defoultborder{
+  border: variables.$BorderPhoto;
+}
+%defoultList{
+  border: 1px solid variables.$Line;
+  border-radius: 5px;
+}
